@@ -5,7 +5,7 @@ export class Order extends BaseEntity {
     @PrimaryGeneratedColumn()
     public id!: number;
 
-    @Column({ type: 'decimal', precision: 12, scale: 2 })
+    @Column({ type: 'double precision'})
     public price!: number;
 
     /*
